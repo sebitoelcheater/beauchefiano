@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @message.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @message.text %>
+</p>
+
+<p>
+  <strong>Father:</strong>
+  <%= @message.father %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @message.user %>
+</p>
+
+<p>
+  <strong>Minus one:</strong>
+  <%= @message.minus_one %>
+</p>
+
+<p>
+  <strong>Number answer:</strong>
+  <%= @message.number_answer %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
