@@ -11,23 +11,33 @@
 </p>
 
 <p>
-  <strong>Father:</strong>
-  <%= @message.father %>
+  <strong>Message:</strong>
+  <%= @message.message_id %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @message.user %>
+  <%= @message.user_id %>
 </p>
 
 <p>
-  <strong>Minus one:</strong>
-  <%= @message.minus_one %>
+  <strong>Date:</strong>
+  <%= @message.date %>
 </p>
 
 <p>
-  <strong>Number answer:</strong>
-  <%= @message.number_answer %>
+  <strong>Category:</strong>
+  <%= @message.category %>
+</p>
+
+<p>
+  <strong>Dislikes:</strong>
+  <%= @message.dislikes %>
+</p>
+
+<p>
+  <strong>Permalink:</strong>
+  <%= @message.permalink %>
 </p>
 
 <%= link_to 'Edit', edit_message_path(@message) %> |

@@ -1,1 +1,1 @@
-json.extract! @message, :id, :title, :text, :father, :user, :minus_one, :number_answer, :created_at, :updated_at
+json.extract! @message, :id, :title, :text, :message_id, :user_id, :date, :category, :dislikes, :permalink, :created_at, :updated_at

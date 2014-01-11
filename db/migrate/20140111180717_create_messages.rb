@@ -3,10 +3,12 @@ class CreateMessages < ActiveRecord::Migration
     create_table :messages do |t|
       t.string :title
       t.string :text
-      t.integer :father
-      t.integer :user
-      t.integer :minus_one
-      t.integer :number_answer
+      t.integer :message_id
+      t.integer :user_id
+      t.datetime :date
+      t.string :category
+      t.integer :dislikes
+      t.string :permalink
 
       t.timestamps
     end

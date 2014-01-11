@@ -20,20 +20,28 @@
     <%= f.text_field :text %>
   </div>
   <div class="field">
-    <%= f.label :father %><br>
-    <%= f.text_field :father %>
+    <%= f.label :message_id %><br>
+    <%= f.number_field :message_id %>
   </div>
   <div class="field">
-    <%= f.label :user %><br>
-    <%= f.text_field :user %>
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
   </div>
   <div class="field">
-    <%= f.label :minus_one %><br>
-    <%= f.text_field :minus_one %>
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
   </div>
   <div class="field">
-    <%= f.label :number_answer %><br>
-    <%= f.text_field :number_answer %>
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :dislikes %><br>
+    <%= f.number_field :dislikes %>
+  </div>
+  <div class="field">
+    <%= f.label :permalink %><br>
+    <%= f.text_field :permalink %>
   </div>
   <div class="actions">
     <%= f.submit %>
