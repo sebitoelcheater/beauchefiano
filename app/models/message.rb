@@ -3,4 +3,9 @@ class Message < ActiveRecord::Base
 	has_many :messages
 	has_many :likes
 	belongs_to :user
+	before_save :set_date
+
+	def set_date
+		
+
 end
