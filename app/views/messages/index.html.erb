@@ -5,10 +5,12 @@
     <tr>
       <th>Title</th>
       <th>Text</th>
-      <th>Father</th>
+      <th>Message</th>
       <th>User</th>
-      <th>Minus one</th>
-      <th>Number answer</th>
+      <th>Date</th>
+      <th>Category</th>
+      <th>Dislikes</th>
+      <th>Permalink</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,10 +22,12 @@
       <tr>
         <td><%= message.title %></td>
         <td><%= message.text %></td>
-        <td><%= message.father %></td>
-        <td><%= message.user %></td>
-        <td><%= message.minus_one %></td>
-        <td><%= message.number_answer %></td>
+        <td><%= message.message_id %></td>
+        <td><%= message.user_id %></td>
+        <td><%= message.date %></td>
+        <td><%= message.category %></td>
+        <td><%= message.dislikes %></td>
+        <td><%= message.permalink %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
         <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
